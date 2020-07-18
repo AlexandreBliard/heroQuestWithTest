@@ -10,7 +10,7 @@ public class Salle {
     protected Loot reward;
 
 
-/*SETTER------SETTER------SETTER------SETTER------*/
+    /*SETTER------SETTER------SETTER------SETTER------*/
 
     public void setDescription(String description) {
         this.description = description;
@@ -45,8 +45,9 @@ public class Salle {
         this.ennemis = ennemis;
         this.reward = reward;
     }
-/*constructeur pour la création des cases avec descriptions et récompenses
-* et sans monstres*/
+
+    /*constructeur pour la création des cases avec descriptions et récompenses
+     * et sans monstres*/
     public Salle(String description, Loot reward) {
         this.description = description;
         this.ennemis = new NoOne();
@@ -54,14 +55,12 @@ public class Salle {
     }
 
 
-
-
     /*toSTRING ------toSTRING ------toSTRING ------*/
     @Override
     public String toString() {
         return "Tu pénètres " +
                 description +
-                 "\n" +
+                "\n" +
                 " il y a " + ennemis;
     }
 
