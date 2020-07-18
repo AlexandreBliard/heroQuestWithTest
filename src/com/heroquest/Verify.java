@@ -14,7 +14,7 @@ public class Verify {
         if (plateaux.get(position).getReward().getPour().equals(aventurier.getType())) {
             return type = true;
         }else{
-            return type = false;
+            return false;
         }
     }
 }
